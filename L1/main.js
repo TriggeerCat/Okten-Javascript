@@ -45,7 +45,7 @@
     let firstName = 'Denys';
     let middleName = 'Yuriyovych';
     let lastName = 'Crawford';
-    let theName = lastName + ' ' + firstName + ' ' + middleName;
+    let theName = `${lastName} ${firstName} ${middleName}`;
     console.log(theName)
 }
 
@@ -55,7 +55,7 @@
     let b = '100';
     let c = true;
 
-    console.log(typeof a + ' ' + typeof b + ' ' + typeof c)
+    console.log(typeof a, typeof b, typeof c)
 }
 
 // Task 4
@@ -64,5 +64,5 @@
     let middleName = prompt('You middle name, sir?');
     let years = prompt('Your years, sir?');
 
-    console.log(firstName + ' ' + middleName + ' ' + years);
+    console.log(firstName, middleName, years);
 }
