@@ -99,7 +99,6 @@ function ConstructorCar(model, producer, productionYear, maxSpeed, fuelTankVolum
 
 // Task 7
 
-
 class ClassCar {
     constructor(model, producer, productionYear, maxSpeed, fuelTankVolume) {
         this.model = model;
