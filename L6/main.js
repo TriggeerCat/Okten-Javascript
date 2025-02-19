@@ -108,12 +108,6 @@ const deck = [
     {cardSuit: 'heart', value: 'ace', color: 'red'}
 ];
 
-// - знайти піковий туз
-// - всі шістки
-// - всі червоні карти
-// - всі дзвіни
-// - всі хрести від 9 та більше
-
 console.log(deck.find(card => card.cardSuit === 'spade' && card.value === 'ace'));
 console.log(deck.filter(card => card.value === '6'));
 console.log(deck.filter(card => card.color === 'red'));
