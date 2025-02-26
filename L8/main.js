@@ -3,7 +3,7 @@
 let user1 = {
     name: 'Artem',
     age: 20,
-    status: true,
+    status: null,
     skills: ['c++', 'python', 'binding of isaac'],
     greeting() {
         return `Hello, my name is ${this.name}, I'm gonna break your knees`;
@@ -13,9 +13,11 @@ let user1 = {
 function deepCopy(obj) {
     let newObj = {};
     for (const objKey in obj) {
-        if (typeof obj[objKey] == "object") {
+        if (typeof obj[objKey] === "object") {
             if (Array.isArray(obj[objKey])) {
-                newObj[objKey] = JSON.parse(JSON.stringify(obj[objKey]))
+                newObj[objKey] = obj[objKey].map(value => value);
+            } else if (obj[objKey] === null) {
+                newObj[objKey] = null;
             } else {
                 newObj[objKey] = deepCopy(obj[objKey]);
             }
@@ -43,5 +45,5 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-const addId = (value, index) => ({ id: index + 1, ...value})
+const addId = (value, index) => ({id: index + 1, ...value})
 console.log(coursesAndDurationArray.map(addId));
