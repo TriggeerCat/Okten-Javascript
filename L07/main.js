@@ -165,20 +165,3 @@ function Prince(name, age, shoeSize) {
 const prince = new Prince("William", 22, 35)
 
 console.log(`The name of the cinderella who should be with prince ${prince.name} is ${(cinderellas.find(cinderella => cinderella.footSize === prince.shoeSize)).name}!`);
-
-// Task 9
-
-const QAEngineerWalksIntoTheBar = [1, 0, 99999999999, "lizard", -1, "ueicbksjdhd", true, "First real customer wals into the bar and asks where the toilet is", "Bar:", "🔥"]
-
-Array.prototype.forEach = function () {
-    for (const x of this) {
-        console.log(x);
-    }
-}
-
-Array.prototype.filter = function () {
-    return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-};
-
-QAEngineerWalksIntoTheBar.forEach();
-console.log(QAEngineerWalksIntoTheBar.filter());
