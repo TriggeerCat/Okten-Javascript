@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name and Value List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-tablet.css">
+    <link rel="stylesheet" href="style-phone.css">
+</head>
+<body>
+<main>
+    <div class="wrap">
+        <h2>Test</h2>
+    </div>
+
+    <div class="wrap">
+        <form name="name-value">
+            <label>
+                Name/Value Pair
+                <div class="flex" id="inputDiv">
+                    <br>
+                    <input placeholder="Name=Value" type="text" id="nvInput">
+                    <button id="buttonAdd" type='button'>Add</button>
+                </div>
+            </label>
+        </form>
+    </div>
+
+    <div class="wrap">
+        <form name="name-value">
+            <label>
+                Name/Value Pair List
+                <br>
+                <div class="flex">
+                    <textarea id="nvTextArea" readonly></textarea>
+                    <div class="flex" id="buttonsDiv">
+                        <button id="buttonSortName" type='button'>Sort by Name</button>
+                        <button id="buttonSortValue" type='button'>Sort by Value</button>
+                        <button id="buttonDelete" type='button'>Delete</button>
+                    </div>
+                </div>
+            </label>
+        </form>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@media screen and (min-width: 481px) and (max-width: 1279px)
+{
+    main
+    {
+        background-color: white;
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 1px;
+        max-width: 420px;
+    }
+
+    input
+    {
+        height: 30px;
+        width: 300px;
+        font-size: 12px;
+    }
+
+    textarea
+    {
+        height: 300px;
+        width: 300px;
+        resize: none;
+        font-size: 12px;
+    }
+
+    button
+    {
+        height: 30px;
+        max-width: 50px;
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+    .wrap
+    {
+        margin: 20px;
+    }
+}
